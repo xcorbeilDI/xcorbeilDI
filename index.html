@@ -8,14 +8,12 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-messaging.js"></script>
 	<script src="https://docker.didev.ca/T/OFC4/WPS/210450/16640/5aUEm1PLnmP2FIRy8L9oA8CK9l8J76LC/DI.WebPush-min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-    <label>idUser du contact</label>
+    <label>Adresse courriel du contact</label>
     <input id="email" type="text" style="width:300px;" />
-    <input type="button" value="Identifier le contact" onclick="DI.WebPush.Identify('idUser', document.getElementById('email').value);" />
+    <input type="button" value="Identifier le contact" onclick="DI.WebPush.Identify('f_EMail', document.getElementById('email').value);" />
     <input type="button" value="Reset identification" onclick="DI.WebPush.ResetIdentify();" />
     <br/>
     <input type="button" value="Envoi du token fr" onclick="DI.WebPush.RequestPermission('fr');"  />
